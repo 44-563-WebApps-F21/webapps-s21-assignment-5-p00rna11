@@ -15,6 +15,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+    
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
@@ -57,41 +58,37 @@
 
     </div>
 <div class="container">
-    <img src="tuna.jpg" class="img-fluiod" alt="Yellowfin-tuna"
-    height="400"
-    width="500">
+    <img src="tuna.jpg" class="img-fluiod" alt="Yellowfin-tuna" style="height: 300px;width: 350px;padding: 5px;" >
     
-    <img src="Narwhal.jpg" class="img-fluid" alt="narwhal"
-    height="400"
-    width="500">
+    <img src="albatros.jpg" class="img-fluid" alt="Albatross" style="height: 300px;width: 350px;  padding: 5px;">
+    <img src="Narwhal.jpg" class="img-fluid" alt="narwhal"style="height: 288px;width: 350px;">
     
-    <img src="albatros.jpg" class="img-fluid" alt="Albatross"
-    height="400"
-    width="500">
+    
 
 </div>
 <br>
 
 <div class="container">
          
-    <a href="tuna.jpg" target="_blank"><img src="tuna.jpg" class="img-thumbnail" alt="yellowfin tuna" width="150px"></a>
+    <a href="tuna.jpg" target="_blank"><img src="tuna.jpg" class="img-thumbnail" alt="yellowfin tuna" style="height: 116px;" width="150px"></a>
     <a href="albatros.jpg" target="_blank"><img src="albatros.jpg" class="img-thumbnail" alt="Albatross" width="150px"></a>
-    <a href="Narwhal.jpg" target="_blank"><img src="Narwhal.jpg" class="img-thumbnail" alt="narwhal" width="150px"></a>
+    <a href="Narwhal.jpg" target="_blank"><img src="Narwhal.jpg" class="img-thumbnail" alt="narwhal" style="height: 116px;" width="150px"></a>
   
-</div>
+</div><br>
 
-<table class="table table-success table-striped table-bordered table-hover">
+<table class="table-success table-bordered table-hover" width=80%>
   <thead>
-    <tr>
-        <th scope="col">Letters</th>
+    <caption>Tabular data of Y data</caption>
+    <tr  >
+        <th class="table-default" scope="row">Letters</th>
         <th class="table-danger" scope="col">Animal</th>
         <th class="table-secondary" scope="col">City</th>
-        <th class="table-primary" scope="col">Car</th>
+        <th class="table-primary" scope="col">Car</th> 
         
     </tr>
 </thead>
 <tbody>
-    <tr>
+    <tr >
         <th class="table-default" scope="row">Y</th>
         <td class="table-danger"> Yellowfin-tuna</td>
         <td class="table-secondary">Yonkers</td>
@@ -156,15 +153,19 @@
   </div>
 </div><br>
 
-<div class="dropdown">
-    <button type="button" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Select for navigation to the page
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown to page
     </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="Plane.html">Plane page</a>
-      <a class="dropdown-item" href="train.html">train page</a>
-    </div>
-  </div><br>
+    <ul class="dropdown-menu " aria-labelledby="btnGroupDrop1">
+      <li><a class="dropdown-item" href="Plane.html">Plane </a></li>
+      <li><a class="dropdown-item" href="train.html">train</a></li>
+    </ul>
+  </div>
+</div>
+<br>
+<br>
 
 <form>
     <div class="form-group">
@@ -180,7 +181,7 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-success">Submit</button>
   </form>
 <br><br>
   <div class="card-group">
@@ -189,7 +190,7 @@
       <div class="card-body">
         <h5 class="card-title">Yellowfin-tuna</h5>
         <p class="card-text">The yellowfin tuna (Thunnus albacares) is a species of tuna found in pelagic waters of tropical and subtropical oceans worldwide.</p>
-        <a href="https://en.wikipedia.org/wiki/Yellowfin_tuna" class="btn btn-primary">Read more</a>
+        <a href="https://en.wikipedia.org/wiki/Yellowfin_tuna" class="btn btn-outline-success">Read more</a>
       </div>
     </div>
     <div class="card">
@@ -197,7 +198,7 @@
       <div class="card-body">
         <h5 class="card-title">Albatross</h5>
         <p class="card-text">Albatrosses, of the biological family Diomedeidae, are large seabirds related to the procellariids, storm petrels, and diving petrels in the order Procellariiformes (the tubenoses). They range widely in the Southern Ocean and the North Pacific.</p>
-        <a href="https://en.wikipedia.org/wiki/Albatross" class="btn btn-primary">Read more</a>
+        <a href="https://en.wikipedia.org/wiki/Albatross" class="btn btn-outline-success">Read more</a>
       </div>
     </div>
     <div class="card">
@@ -205,7 +206,7 @@
       <div class="card-body">
         <h5 class="card-title">Narwhal</h5>
         <p class="card-text">The narwhal or narwhale (Monodon monoceros) is a medium-sized toothed whale that possesses a large "tusk" from a protruding canine tooth. It lives year-round in the Arctic waters around Greenland, Canada, and Russia.</p>
-        <a href="https://en.wikipedia.org/wiki/Narwhal" class="btn btn-primary">Read more</a>
+        <a class="btn btn-outline-success" href='https://en.wikipedia.org/wiki/Narwhal' >Read more</a>
       </div>
     </div>
   
